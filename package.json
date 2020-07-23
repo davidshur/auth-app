@@ -1,0 +1,19 @@
+{
+  "name": "auth-app",
+  "version": "1.0.0",
+  "description": "MERN Authentication with JWT.",
+  "main": "server.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/davidshur/auth-app.git"
+  },
+  "author": "davidshur <david.v.shur@gmail.com>",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/davidshur/auth-app/issues"
+  },
+  "homepage": "https://github.com/davidshur/auth-app#readme"
+}
