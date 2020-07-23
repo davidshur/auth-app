@@ -1,0 +1,28 @@
+{
+  "name": "auth-app",
+  "version": "1.0.0",
+  "description": "MERN Authentication Application",
+  "main": "server.js",
+  "scripts": {
+    "start": "nodemon server.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/davidshur/auth-app.git"
+  },
+  "keywords": [
+    "MongoDB",
+    "ExpressJS",
+    "ReactJS",
+    "NodeJS"
+  ],
+  "author": "davidshur",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/davidshur/auth-app/issues"
+  },
+  "homepage": "https://github.com/davidshur/auth-app#readme",
+  "devDependencies": {
+    "nodemon": "^2.0.4"
+  }
+}
