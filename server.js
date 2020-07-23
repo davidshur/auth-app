@@ -3,9 +3,12 @@ const mongoose = require('mongoose');
 const bodyParser = require('body-parser');
 const passport = require('passport');
 const app = express();
-const UserModel = require('./model/model');
+const UserModel = require('./models/model');
 
-mongoose.connect('mongodb://127.0.0.1:27017/auth-app', { useMongoClient: true });
+mongoose.connect('mongodb://127.0.0.1:27017/auth-app', {
+  useNewUrlParser: true,
+  useUnifiedTopology: true
+});
 mongoose.connection.on('error', error => console.log(error));
 mongoose.Promise = global.Promise;
 
