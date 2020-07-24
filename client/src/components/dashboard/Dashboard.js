@@ -2,11 +2,22 @@ import React, { Component } from 'react';
 import PropTypes from 'prop-types';
 import { connect } from 'react-redux';
 import { logoutUser } from '../../actions/authActions';
+import { loadStripe } from '@stripe/stripe-js';
+
+const stripePromise = loadStripe(
+  'pk_test_51H8XMFDrfM58ozRHV0XzB6C3NORvUOs7ZJsKV4oNVIpWsjwJqcWcM5WIOslmpXNAXnKVgGALmEGruc0VwokMNjeO00SosmmuNT'
+);
 
 class Dashboard extends Component {
   onLogoutClick = (e) => {
     e.preventDefault();
     this.props.logoutUser();
+  };
+
+  handleClick = async (e) => {
+    const { sessionId } = await fetchCheckoutSession();
+    const stripe = await stripePromise;
+    const { error } = await stripe.redirectToCheckout({ sessionId });
   };
 
   render() {
@@ -30,7 +41,7 @@ class Dashboard extends Component {
                   letterSpacing: '1.5px',
                   marginTop: '1rem',
                 }}
-                onClick={() => console.log('Will pay soon!')}
+                onClick={this.handleClick}
                 className="btn btn-large waves-effect waves-light hoverable green accent-3"
               >
                 Subscribe
