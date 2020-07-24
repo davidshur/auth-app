@@ -1,11 +1,18 @@
 import React from 'react';
+import { BrowserRouter as Router } from 'react-router-dom';
 import './App.css';
+
+import Landing from './components/layout/Landing';
+import Navbar from './components/layout/Navbar';
 
 function App() {
   return (
-    <div className="App">
-      <h1>Hello world.</h1>
-    </div>
+    <Router>
+      <div className="App">
+        <Navbar />
+        <Landing />
+      </div>
+    </Router>
   );
 }
 
