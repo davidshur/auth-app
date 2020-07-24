@@ -3,6 +3,13 @@ const mongoose = require('mongoose');
 const bodyParser = require('body-parser');
 const passport = require('passport');
 const path = require('path');
+const cors = require('cors');
+
+corsOptions = {
+  origin: 'Your FrontEnd Website URL',
+  optionsSuccessStatus: 200, // some legacy browsers (IE11, various SmartTVs) choke on 204
+};
+app.use(cors(corsOptions));
 
 const users = require('./routes/api/users');
 
