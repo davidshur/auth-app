@@ -15,9 +15,19 @@ class Dashboard extends Component {
   };
 
   handleClick = async (e) => {
-    const { sessionId } = await fetchCheckoutSession();
+    // When the customer clicks on the button, redirect them to Checkout.
     const stripe = await stripePromise;
-    const { error } = await stripe.redirectToCheckout({ sessionId });
+    stripe.redirectToCheckout({
+      lineItems: [
+        {
+          price: 'price_1H8ZYgDrfM58ozRHX7IUXln6',
+          quantity: 1,
+        },
+      ],
+      mode: 'subscription',
+      successUrl: 'http://auth-app-mern.herokuapp.com',
+      cancelUrl: 'http://auth-app-mern.herokuapp.com',
+    });
   };
 
   render() {
