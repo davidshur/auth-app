@@ -5,17 +5,16 @@ const passport = require('passport');
 const path = require('path');
 const cors = require('cors');
 
-corsOptions = {
-  origin: 'https://auth-app-mern.herokuapp.com/',
-  optionsSuccessStatus: 200, // some legacy browsers (IE11, various SmartTVs) choke on 204
-};
-app.use(cors(corsOptions));
-
 const users = require('./routes/api/users');
 
 const app = express();
 const port = process.env.PORT || 5000;
 
+corsOptions = {
+  origin: 'https://auth-app-mern.herokuapp.com/',
+  optionsSuccessStatus: 200, // some legacy browsers (IE11, various SmartTVs) choke on 204
+};
+app.use(cors(corsOptions));
 app.use(bodyParser.urlencoded({ extended: false }));
 app.use(bodyParser.json());
 
