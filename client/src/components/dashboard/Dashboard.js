@@ -20,11 +20,11 @@ class Dashboard extends Component {
     stripe.redirectToCheckout({
       lineItems: [
         {
-          price: 'price_1H8ZYgDrfM58ozRHX7IUXln6',
+          price: 'price_1H8aKRDrfM58ozRHxSJMYVjx',
           quantity: 1,
         },
       ],
-      mode: 'subscription',
+      mode: 'payment',
       successUrl: 'http://auth-app-mern.herokuapp.com',
       cancelUrl: 'http://auth-app-mern.herokuapp.com',
     });
