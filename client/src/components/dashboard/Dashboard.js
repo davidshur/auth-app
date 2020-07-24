@@ -30,7 +30,7 @@ class Dashboard extends Component {
                   letterSpacing: '1.5px',
                   marginTop: '1rem',
                 }}
-                onClick={this.onLogoutClick}
+                onClick={() => console.log('Will pay soon!')}
                 className="btn btn-large waves-effect waves-light hoverable green accent-3"
               >
                 Subscribe
