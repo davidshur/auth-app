@@ -54,7 +54,7 @@ class Dashboard extends Component {
                 onClick={this.handleClick}
                 className="btn btn-large waves-effect waves-light hoverable green accent-3"
               >
-                Subscribe
+                Donate
               </button>
             </div>
             <div className="col s6">
