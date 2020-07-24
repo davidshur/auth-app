@@ -5,7 +5,7 @@ import { logoutUser } from '../../actions/authActions';
 import { loadStripe } from '@stripe/stripe-js';
 
 const stripePromise = loadStripe(
-  'pk_test_51H8XMFDrfM58ozRHV0XzB6C3NORvUOs7ZJsKV4oNVIpWsjwJqcWcM5WIOslmpXNAXnKVgGALmEGruc0VwokMNjeO00SosmmuNT'
+  'pk_live_51H8XMFDrfM58ozRH5XQQwYxzfmjhvAVPlwtMyDwVfdqo5bJcEYJgzVnQzBdAUybX9OIh0Bph1WTFSW9FBUS41Ta400Pk8FEBYL'
 );
 
 class Dashboard extends Component {
