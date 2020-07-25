@@ -25,8 +25,8 @@ class Dashboard extends Component {
         },
       ],
       mode: 'payment',
-      successUrl: 'http://auth-app-mern.herokuapp.com/success',
-      cancelUrl: 'http://auth-app-mern.herokuapp.com/cancel',
+      successUrl: 'https://auth-app-mern.herokuapp.com/success',
+      cancelUrl: 'https://auth-app-mern.herokuapp.com/cancel',
     });
   };
 
