@@ -8,10 +8,10 @@ class Landing extends Component {
         <div className="row">
           <div className="col s12 center-align">
             <h4>
-              <b>Join </b> <span style={{ fontFamily: 'monospace' }}>DAVID</span> by logging in!
+              Send <span style={{ fontFamily: 'monospace' }}>LOVE</span> to <b>family</b> and <b>friends</b>!
             </h4>
             <p className="flow-text grey-text text-darken-1">
-              Inside you will be able to pay him money.
+              You send a postcard online. We send a postcard in real-life.
             </p>
             <br />
             <div className="col s6">
@@ -22,7 +22,7 @@ class Landing extends Component {
                   borderRadius: '3px',
                   letterSpacing: '1.5px',
                 }}
-                className="btn btn-large waves-effect waves-light hoverable blue accent-3"
+                className="btn btn-large waves-effect waves-light hoverable pink accent-3"
               >
                 Register
               </Link>
