@@ -37,10 +37,9 @@ class Dashboard extends Component {
         <div className="row">
           <div className="col s12 center-align">
             <h4>
-              <b>Hey there,</b> {user.name.split(' ')[0]}
+              Hey there, <b>{user.name.split(' ')[0]}</b>
               <p className="flow-text grey-text text-darken-1">
-                It is time you showed <span style={{ fontFamily: 'monospace' }}>DAVID</span> your
-                support 👏
+                Send a postcard to friends or family.
               </p>
             </h4>
             <div className="col s6">
@@ -52,9 +51,9 @@ class Dashboard extends Component {
                   marginTop: '1rem',
                 }}
                 onClick={this.handleClick}
-                className="btn btn-large waves-effect waves-light hoverable green accent-3"
+                className="btn btn-large waves-effect waves-light hoverable pink accent-3"
               >
-                Donate
+                Send
               </button>
             </div>
             <div className="col s6">
@@ -66,7 +65,7 @@ class Dashboard extends Component {
                   marginTop: '1rem',
                 }}
                 onClick={this.onLogoutClick}
-                className="btn btn-large waves-effect waves-light hoverable blue accent-3"
+                className="btn btn-large waves-effect waves-light hoverable white black-text accent-3"
               >
                 Logout
               </button>
